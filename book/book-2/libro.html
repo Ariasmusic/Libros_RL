@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Libro Interactivo</title>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/-icon-e-book.png" type="image/x-icon">
+    <link rel="stylesheet" href="page-flip/page-flip.min.css" />
+    <link rel="stylesheet" href="css/libro.css" />
+</head>
+
+<body>
+    <div class="fondo-video">
+        <video autoplay muted loop playsinline class="video-background">
+            <source src="video/fondo2.mp4" type="video/mp4">
+        </video>
+        <div class="contenido">
+            <div class="container">
+                <div id="flipbook">
+                    <!-- Portada -->
+                    <div class="page portada">
+                        <div class="page-content">
+                            <h1>TRINCHERÓN</h1>
+                            <img src="img/portada.png" alt="portada" class="character">
+                            <h2>DE PAYA</h2>
+                        </div>
+                    </div>
+
+                    <!-- Introducción -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena">PRÓLOGO</h3>
+                            <p class="parrafo">
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <p class="parrafo">
+   
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena">Tabla de Contenido</h3>
+                            <ul class="tabla-contenido">
+                                <li><a href="#" data-page="5"></a></li>
+                                <li><a href="#" data-page="7"></a></li>
+                                <li><a href="#" data-page="9"></a>
+                                </li>
+                                <li><a href="#" data-page="11"></a></li>
+                                <li><a href="#" data-page="13"></a></li>
+                                <li><a href="#" data-page="15"></a></li>
+                                <li><a href="#" data-page="17"></a></li>
+                                <li><a href="#" data-page="19"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <ul class="tabla-contenido">
+                                <li><a href="#" data-page="21"></a></li>
+                                <li><a href="#" data-page="23"></a></li>
+                                <li><a href="#" data-page="25"></a></li>
+                                <li><a href="#" data-page="27"></a>
+                                </li>
+                                <li><a href="#" data-page="29"></a></li>
+                                <li><a href="#" data-page="31"></a></li>
+                                <li><a href="#" data-page="33"></a></li>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Contenido (16 páginas) -->
+                    <!-- escena 1 -->
+                    <div class="page">
+                        <div class="page-content" id="page1">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio1">
+                            </button>
+                            <audio id="audio1" src="audios/audio1.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 2 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <p class="parrafo"></p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio1">
+                            </button>
+                            <audio id="audio2" src="audios/audio2.mp3"></audio>
+                        </div>
+                    </div>
+                    <!-- escena 3 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;"
+                                onclick="reproducirAudio('audio3')">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio3">
+                            </button>
+                            <audio id="audio3" src="audios/audio3.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 4 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <p class="parrafo"></p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio4">
+                            </button>
+                            <audio id="audio4" src="audios/audio4.mp3"></audio>
+                        </div>
+                    </div>
+                    <!-- escena 5 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio5">
+                            </button>
+                            <audio id="audio5" src="audios/audio5.mp3"></audio>
+
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 6 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio6">
+                            </button>
+                            <audio id="audio6" src="audios/audio6.mp3"></audio>
+
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 7 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena">El pueblo se une: víveres, caballos y esperanza</h3>
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio7">
+                            </button>
+                            <audio id="audio7" src="audios/audio7.mp3"></audio>
+                        </div>
+                    </div>
+                    <!-- escena 8 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"></p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio8">
+                            </button>
+                            <audio id="audio8" src="audios/audio8.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 9 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio9">
+                            </button>
+                            <audio id="audio9" src="audios/audio9.mp3"></audio>
+                        </div>
+                    </div>
+                    <!-- escena 10 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"> </p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button"
+                                    data-audio="audio10">
+                            </button>
+                            <audio id="audio10" src="audios/audio10.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+                    <!-- escena 11 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <img src="img/" alt="imagen11" class="img_escena">
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+
+                            <p class="parrafo"></p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button"
+                                    data-audio="audio11">
+                            </button>
+                            <audio id="audio11" src="audios/audio11.mp3"></audio>
+                        </div>
+                    </div>
+                    <!-- escena 12 -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena"></h3>
+                            <p class="parrafo"></p>
+                            <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                                <img src="img/icon_audio.png" alt="icon-audio" class="audio-button"
+                                    data-audio="audio12">
+                            </button>
+                            <audio id="audio12" src="audios/audio12.mp3"></audio>
+                        </div>
+                    </div>
+                    <div class="page">
+                        <div class="page-content">
+                            <img src="img/" alt="imagen_3" class="img_escena">
+                        </div>
+                    </div>
+
+
+                    <!-- Contraportada -->
+                    <div class="page">
+                        <div class="page-content">
+                            <h3 class="title_escena">Trincherón de Paya</h3>
+                            <h4 class="subtitle"></h4>
+                            <p class="parrafo">
+
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="page contraportada">
+                        <div class="page-content">
+                            <p>NARRATIVA DIAS PREVIOS </p>
+                            <p> ESTACIÓN MUSEOGRAFICA BATALLA DE BOYACA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navegación -->
+                <div class="controls">
+                    <a id="prev-btn"><img src="img/flecha-izquierda.png" alt="flecha-izquierda" class="btn_opc"></a>
+                    <a id="btn_home"><img src="img/btn_home.png" alt="btn_home" class="btn_home"></a>
+                    <a id="next-btn"><img src="img/flecha-derecha.png" alt="flecha-izquierda" class="btn_opc"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio src="audios/page_flip.mp3" preload="auto" id="audio"></audio>
+    <script src="page-flip/page-flip.browser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
