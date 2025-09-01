@@ -1,0 +1,120 @@
+/* ===== Reset y Fuente ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background: url('../img/fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 15, 15, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: -1;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #f8e9c2;
+    text-shadow: 2px 2px 8px #000;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+/* ===== Cards ===== */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    place-items: center;
+}
+
+.card {
+    background: rgba(30, 30, 30, 0.9);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: filter 0.3s ease;
+}
+
+.card:hover .card-image img {
+    filter: brightness(1.1);
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    color: #f8e9c2;
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+/* ===== Botón ===== */
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #9c6e3a, #d4af37);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #d4af37, #9c6e3a);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+}
