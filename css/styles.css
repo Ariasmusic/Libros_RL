@@ -1,4 +1,4 @@
-/* ===== Reset y Fuente ===== */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,115 +6,112 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
+    background: #0a0a0a;
     color: #fff;
-    background: url('../img/fondo.png') no-repeat center center fixed;
-    background-size: cover;
-    position: relative;
-    min-height: 100vh;
     overflow-x: hidden;
+
+
+    margin: 0;
+    height: 100vh;
+    background: url("../img/fondo.png") no-repeat center center/cover;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+#tsparticles {
+    position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(15, 15, 15, 0.7);
-    backdrop-filter: blur(3px);
     z-index: -1;
 }
 
-/* ===== Header ===== */
-header {
+.container {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 3rem 2rem;
+    position: relative;
+    z-index: 1;
 }
 
-header h1 {
+.title {
     font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #f5d46d;
+    text-shadow: 0 0 15px rgba(245, 212, 109, 0.8);
     margin-bottom: 0.5rem;
-    color: #f8e9c2;
-    text-shadow: 2px 2px 8px #000;
 }
 
-header p {
+.subtitle {
     font-size: 1.2rem;
+    margin-bottom: 2rem;
     color: #ddd;
 }
 
-/* ===== Cards ===== */
-.container {
+.books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding: 1rem;
     place-items: center;
 }
 
-.card {
-    background: rgba(30, 30, 30, 0.9);
-    border-radius: 15px;
+.book-card {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     overflow: hidden;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    cursor: pointer;
-    max-width: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+.book-card:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(245, 212, 109, 0.5);
 }
 
-.card-image img {
+.book-card:active {
+    transform: rotateY(0deg) scale(0.95);
+    box-shadow: 0 5px 15px rgba(245, 212, 109, 0.3);
+}
+
+.book-cover img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
-    filter: brightness(0.9);
-    transition: filter 0.3s ease;
+    border-bottom: 3px solid #f5d46d;
 }
 
-.card:hover .card-image img {
-    filter: brightness(1.1);
-}
-
-.card-content {
+.book-content {
     padding: 1.5rem;
-    text-align: center;
 }
 
-.card-content h2 {
+.book-content h2 {
     font-family: 'Cinzel', serif;
-    font-size: 1.4rem;
-    color: #f8e9c2;
-    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    color: #f5d46d;
 }
 
-.card-content p {
+.book-content p {
     font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 1rem;
+    color: #ddd;
+    margin-bottom: 1.5rem;
 }
 
-/* ===== Botón ===== */
 .btn {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    font-weight: bold;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #f5d46d, #d4af37);
+    color: #000;
     text-decoration: none;
-    color: #fff;
-    background: linear-gradient(135deg, #9c6e3a, #d4af37);
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(245, 212, 109, 0.6);
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #d4af37, #9c6e3a);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(90deg, #ffe680, #f5d46d);
+    box-shadow: 0 0 25px rgba(245, 212, 109, 1);
+    transform: scale(1.05);
 }
