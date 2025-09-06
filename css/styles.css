@@ -16,6 +16,20 @@ body {
     height: 100vh;
     background: url("../img/fondo.png") no-repeat center center/cover;
 }
+.video_fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2; 
+}
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 #tsparticles {
     position: fixed;
@@ -115,3 +129,4 @@ body {
     box-shadow: 0 0 25px rgba(245, 212, 109, 1);
     transform: scale(1.05);
 }
+
