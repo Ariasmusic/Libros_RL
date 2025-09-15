@@ -77,3 +77,34 @@ document.querySelectorAll(".audio-button").forEach((button) => {
         reproducirAudio(audioId);
     });
 });
+// efecto zoom en imágenes
+
+// Selecciona todas las imágenes con clase "zoomable"
+const zoomableImages = document.querySelectorAll('.zoomable');
+const zoomOverlay = document.getElementById('zoom-overlay');
+const zoomImg = document.getElementById('zoom-img');
+
+// Abrir zoom
+zoomableImages.forEach(img => {
+    img.addEventListener('click', (e) => {
+        // Detener propagación para múltiples eventos de entrada
+        ["click", "pointerdown", "mousedown", "touchstart"].forEach(eventType => {
+            img.addEventListener(eventType, (event) => {
+                event.stopPropagation();
+            });
+        });
+        zoomImg.src = img.src;
+        zoomOverlay.style.display = 'flex';
+    });
+});
+// Cerrar zoom al hacer clic en la imagen o fondo
+zoomOverlay.addEventListener('click', (e) => {
+    // Detener propagación para múltiples eventos de entrada
+    ["click", "pointerdown", "mousedown", "touchstart"].forEach(eventType => {
+        zoomOverlay.addEventListener(eventType, (event) => {
+            event.stopPropagation();
+        });
+    });
+    zoomOverlay.style.display = 'none';
+    zoomImg.src = '';
+});
