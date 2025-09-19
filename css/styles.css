@@ -16,6 +16,7 @@ body {
     height: 100vh;
     background: url("../img/fondo.png") no-repeat center center/cover;
 }
+
 .video_fondo {
     position: fixed;
     top: 0;
@@ -23,12 +24,15 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -2; 
+    z-index: -2;
+    /* Asegura que el video esté detrás de otros elementos */
 }
+
 #video-background {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* Asegura que el video cubra todo el contenedor */
 }
 
 #tsparticles {
@@ -45,6 +49,173 @@ body {
     z-index: 1;
 }
 
+/* css card 1 */
+.card {
+    position: absolute;
+    top: 250%;
+    left: 30%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 3), 0 20px 100px rgba(0, 0, 0, 3);
+    transition: 1s;
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5);
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: gray;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: gray;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.card .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s cubic-bezier(.15, 1.7, .84, .58);
+
+}
+
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+
+}
+
+.card .details h2,
+.card1 .details1 h2 {
+    line-height: 50px;
+    font-size: 3rem;
+    color: black;
+}
+
+.card .details p,
+.card1 .details1 p {
+    line-height: 50px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+/*css cards 2*/
+.card1 {
+    position: absolute;
+    top: 250%;
+    left: 70%;
+    width: 300px;
+    height: 400px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 300px 0 50px rgba(0, 0, 0, 3), 0 20px 100px rgba(0, 0, 0, 3);
+    transition: 1s;
+}
+
+.card1:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 20px 100px rgba(0, 0, 0, .5);
+}
+
+.card1:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: gray;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+
+.card1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: gray;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+
+.card1 .imgBox1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s cubic-bezier(.15, 1.7, .84, .58);
+
+}
+
+.card1:hover .imgBox1 {
+    transform: rotateY(-135deg);
+}
+
+.card1 .details1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    z-index: -1;
+
+}
+
+/* css btn */
+.btn {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #f5d46d, #d4af37);
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(245, 212, 109, 0.6);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ffe680, #f5d46d);
+    box-shadow: 0 0 25px rgba(245, 212, 109, 1);
+    transform: scale(1.05);
+}
+
+/* 
 .title {
     font-family: 'Cinzel', serif;
     font-size: 3rem;
@@ -112,21 +283,4 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.7rem 1.5rem;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #f5d46d, #d4af37);
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.4s ease;
-    box-shadow: 0 0 15px rgba(245, 212, 109, 0.6);
-}
-
-.btn:hover {
-    background: linear-gradient(90deg, #ffe680, #f5d46d);
-    box-shadow: 0 0 25px rgba(245, 212, 109, 1);
-    transform: scale(1.05);
-}
-
+ */
