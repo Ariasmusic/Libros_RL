@@ -16,7 +16,22 @@ body {
     height: 100vh;
     background: url("../img/fondo.png") no-repeat center center/cover;
 }
-
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: relative;
+    top: 0px;
+    z-index: 1;
+    background-color: #00498076;
+}
+.logo-museo {
+    width: 300px;
+}
+.logo-uptc {
+    width: 200px;
+}
 .video_fondo {
     position: fixed;
     top: 0;
@@ -47,6 +62,7 @@ body {
     padding: 3rem 2rem;
     position: relative;
     z-index: 1;
+    margin: 2rem auto;
 }
 
 /* css card 1 */
