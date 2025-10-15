@@ -58,6 +58,11 @@ header {
 }
 
 .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
     padding: 3rem 2rem;
     position: relative;
@@ -67,9 +72,9 @@ header {
 
 /* css card 1 */
 .card {
-    position: absolute;
+   /* position: absolute;
     top: 250%;
-    left: 30%;
+    left: 30%;*/
     width: 300px;
     height: 400px;
     background: #fff;
@@ -300,3 +305,4 @@ header {
 }
 
  */
+
