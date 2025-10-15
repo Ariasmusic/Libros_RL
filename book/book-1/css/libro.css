@@ -4,7 +4,7 @@ body {
     /* background-image: url('../img/fondo.png'); */
     background-size: cover;
     background-position: center;
-    filter: sepia(70%) contrast(85%) brightness(90%) saturate(70%);
+   /* filter: sepia(70%) contrast(85%) brightness(90%) saturate(70%); */
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -312,4 +312,5 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
