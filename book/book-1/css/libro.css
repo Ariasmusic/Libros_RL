@@ -44,7 +44,9 @@ body {
     text-align: center;
     padding: 2rem;
 }
-
+.video_sepia{
+    filter: sepia(1) saturate(6) hue-rotate(190deg) brightness(.4);
+}
 /* end video */
 .audio-button {
     position: absolute;
@@ -310,3 +312,4 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
