@@ -117,7 +117,7 @@ body {
 
 .tabla-contenido {
     position: absolute;
-    top: 130px;
+    top: 100px;
     list-style: none;
     padding: 0;
     text-align: justify;
@@ -184,7 +184,7 @@ body {
 .page-content .parrafo {
     position: absolute;
     top: calc(50% - 200px);
-    left: calc(50% - 300px);
+    left: calc(50% - 280px);
     font-size: 1rem;
     line-height: 2;
     text-align: justify;
@@ -238,7 +238,7 @@ body {
 .page-content h2 {
     position: relative;
     z-index: 1;
-    bottom: 70px;
+    bottom: 50px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
     font-size: 1.7rem;
@@ -312,6 +312,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
