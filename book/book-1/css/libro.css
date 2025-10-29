@@ -238,7 +238,7 @@ body {
 .page-content h2 {
     position: relative;
     z-index: 1;
-    bottom: 50px;
+    bottom: 30px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
     font-size: 1.7rem;
@@ -312,6 +312,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
