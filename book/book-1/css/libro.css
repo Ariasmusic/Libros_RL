@@ -188,7 +188,7 @@ body {
     font-size: 1rem;
     line-height: 2;
     text-align: justify;
-    max-width: 600px;
+    max-width: 500px;
     font-family: 'IM Fell English', serif;
 }
 
@@ -227,7 +227,7 @@ body {
 
 .page-content h1 {
     position: relative;
-    top: -240px;
+    top: -260px;
     z-index: 1;
     font-family: 'prince-valiant', cursive;
     font-size: 2em;
@@ -238,7 +238,7 @@ body {
 .page-content h2 {
     position: relative;
     z-index: 1;
-    bottom: -150px;
+    bottom: 70px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
     font-size: 1.7rem;
@@ -312,6 +312,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
