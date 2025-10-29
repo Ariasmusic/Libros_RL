@@ -138,7 +138,7 @@ body {
 .tabla-contenido a {
     color: #8b4513;
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     transition: color 0.2s ease;
 }
 
@@ -185,7 +185,7 @@ body {
     position: absolute;
     top: calc(50% - 200px);
     left: calc(50% - 300px);
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2;
     text-align: justify;
     max-width: 600px;
@@ -194,7 +194,7 @@ body {
 
 .title_escena {
     position: relative;
-    top: -300px;
+    top: -350px;
     z-index: 1;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
@@ -230,7 +230,7 @@ body {
     top: -240px;
     z-index: 1;
     font-family: 'prince-valiant', cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     color: #ab7b0a;
     /* margin-bottom: 20px; */
 }
@@ -238,10 +238,10 @@ body {
 .page-content h2 {
     position: relative;
     z-index: 1;
-    bottom: -50px;
+    bottom: -150px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 .controls {
@@ -312,6 +312,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
