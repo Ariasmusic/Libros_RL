@@ -218,7 +218,7 @@ body {
     position: absolute;
     top: calc(55% - 200px);
     left: calc(50% - 300px);
-    width: 600px;
+    width: 500px;
     height: 400px;
     z-index: 0;
     /* filter: grayscale(100%) contrast(160%) brightness(1.1); */
@@ -238,7 +238,7 @@ body {
 .page-content h2 {
     position: relative;
     z-index: 1;
-    bottom: 30px;
+    bottom: 20px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
     font-size: 1.7rem;
@@ -312,6 +312,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
