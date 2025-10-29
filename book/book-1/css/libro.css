@@ -217,10 +217,11 @@ body {
 .page-content .img_escena {
     position: absolute;
     top: calc(55% - 200px);
-    left: calc(50% - 270px);
+    left: calc(50% - 250px);
     width: 500px;
-    height: 400px;
+    height: 350px;
     z-index: 0;
+    border-radius: 10px;
     /* filter: grayscale(100%) contrast(160%) brightness(1.1); */
     mix-blend-mode: multiply;
 }
@@ -312,6 +313,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
