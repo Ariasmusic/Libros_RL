@@ -198,7 +198,7 @@ body {
     z-index: 1;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: center;
     margin-top: 20px;
 }
@@ -209,7 +209,7 @@ body {
     z-index: 1;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-align: center;
     margin-top: 10px;
 }
@@ -241,7 +241,7 @@ body {
     bottom: -50px;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 .controls {
@@ -312,5 +312,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
