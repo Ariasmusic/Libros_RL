@@ -3,8 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("audio");
 
     const pageFlip = new St.PageFlip(flipbook, {
-        width: 700,
-        height: 650,
+        width: 600,
+        height: 550,
         size: "fixed",
         minWidth: 315,
         maxWidth: 1000,
@@ -108,3 +108,4 @@ zoomOverlay.addEventListener('click', (e) => {
     zoomOverlay.style.display = 'none';
     zoomImg.src = '';
 });
+
