@@ -200,11 +200,11 @@ body {
 }
 .title_escena {
     position: relative;
-    top: -350px;
+    top: -370px;
     z-index: 1;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-top: 20px;
 }
@@ -319,6 +319,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
