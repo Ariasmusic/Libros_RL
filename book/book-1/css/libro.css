@@ -151,7 +151,7 @@ body {
     heigth: 200px;
 
     position: relative;
-    top: -350px;
+    top: 350px;
     left: 200px;
 }
 .character {
@@ -326,6 +326,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
