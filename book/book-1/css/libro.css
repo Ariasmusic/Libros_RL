@@ -147,8 +147,8 @@ body {
     text-decoration: underline;
 }
 .logo_museo{
-    width: 300px;
-    heigth: 300px;
+    width: 150px;
+    heigth: 200px;
 
     position: relative;
 }
@@ -324,6 +324,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
