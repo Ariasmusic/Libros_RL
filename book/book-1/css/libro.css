@@ -193,14 +193,14 @@ body {
 }
 .page-content .parrafo_esc1{
     position: relative;
-    top: -200px;
+    top: -250px;
     line-height: 2.5;
     max-width: 500px;
     font-family: 'IM Fell English', serif;
 }
 .title_escena {
-    position: relative;
-    top: -350px;
+    position: absolute;
+    top: 150px;
     z-index: 1;
     color: #ab7b0a;
     font-family: 'prince-valiant', cursive;
@@ -319,6 +319,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
