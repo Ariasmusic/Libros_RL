@@ -222,8 +222,8 @@ body {
 
 .page-content .img_escena {
     position: absolute;
-    top: calc(45% - 200px);
-    left: calc(50% - 270px);
+    top: calc(48% - 200px);
+    left: calc(48% - 270px);
     width: 550px;
     height: 400px;
     z-index: 0;
@@ -319,6 +319,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px #000;
 }
+
 
 
 
