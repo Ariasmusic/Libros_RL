@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruta Libertadora - Biblioteca Interactiva</title>
+    <link rel="shortcut icon" href="img/icon_library.png" type="image/x-icon">
+    <!-- Fuentes -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Librerías -->
+    <link rel="stylesheet" href="book/book-1/page-flip/page-flip.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
+    <script src="book/book-1/page-flip/page-flip.browser.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Contenedor de zoom -->
+    <div id="zoom-overlay">
+        <img id="zoom-img" src="" alt="">
+    </div>
+    <!-- Partículas -->
+    <div id="tsparticles"></div>
+    <header>
+        <img src="img/Logo_de_la_UPTC.svg.png" alt="Logo_de_la_UPTC" class="logo-uptc">
+        <div class="txt">
+            <h1 class="title">SALA 2: LIBRO INTERACTIVO </h1>
+            <p class="subtitle">Explora los días previos a la Batalla de Boyacá</p>
+        </div>
+        <img src="img/Museo-Ruta-de-la-Libertad-Blanco.png" alt="logo-museo" class="logo-museo">
+    </header>
+
+    <div class="container">
+        <div id="flipbook">
+            <!-- Portada -->
+            <div class="page portada">
+                <div class="page-content">
+                    <!-- <h1>DÍAS PREVIOS</h1> -->
+                    <!-- <img src="img/portada_puente.png" alt="portada" class="character"> -->
+                    <!-- <h2>BATALLA DE BOYACÁ</h2> -->
+                </div>
+            </div>
+
+            <!-- Introducción -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">PRÓLOGO</h3>
+                    <p class="parrafo">
+                        En agosto de 1819, los vientos de la independencia soplaban con fuerza en la Nueva
+                        Granada. Tras años de lucha, sacrificio y resistencia, la Campaña Libertadora se
+                        encontraba en un punto decisivo. A pocas jornadas de la histórica Batalla de Boyacá,
+                        cada paso, cada decisión y cada acción de los protagonistas marcarían el rumbo de la
+                        guerra.
+                        Los días previos al 7 de agosto no fueron simplemente un preámbulo militar: fueron un
+                        escenario vivo de tensión, ingenio y esperanza. Campesinos, artesanos, mujeres, niños y
+                        soldados participaron, de manera directa o indirecta, en el entramado de movimientos
+                        estratégicos que culminarían en la victoria. Las lluvias, el frío y las penurias no
+                        detuvieron a quienes creían que la libertad estaba al alcance de la mano, aunque aún
+                        costara sudor, lágrimas y sangre.
+                    </p>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <p class="parrafo">
+                        Este libro recoge, en quince escenas, los momentos más significativos de esa etapa
+                        crucial. Desde la retirada estratégica tras el Pantano de Vargas hasta las maniobras de
+                        engaño contra el general Barreiro, cada episodio está narrado para que el lector pueda
+                        visualizar los rostros, escuchar las voces y sentir el pulso de la Nueva Granada en los
+                        albores de su emancipación.
+                        Al recorrer estas páginas, el lector será testigo de la astucia de Bolívar, de la
+                        determinación de Juana Velasco de Gallo, del coraje de Julián Garzón “el Crespo” y del
+                        compromiso de tantas manos que cosieron, alimentaron y alentaron al ejército patriota.
+                        Este es un homenaje a quienes, en los días previos a la libertad, decidieron no rendirse
+                        y caminar hacia la victoria.
+
+                    </p>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Tabla de Contenido</h3>
+                    <ul class="tabla-contenido">
+                        <li><a href="#" data-page="5">Tras el Pantano de Vargas: la marcha hacia Tunja</a></li>
+                        <li><a href="#" data-page="7">La persecución realista bajo la lluvia</a></li>
+                        <li><a href="#" data-page="9">Mensajeros de la causa: Andrés Gallo y Juana Velasco</a>
+                        </li>
+                        <li><a href="#" data-page="11">Éxodo campesino en Cómbita y Motavita</a></li>
+                        <li><a href="#" data-page="13">El traslado del gobernador Loño y las fuerzas
+                                realistas</a></li>
+                        <li><a href="#" data-page="15">El golpe patriota: Tunja en manos insurgentes</a></li>
+                        <li><a href="#" data-page="17">El pueblo se une: víveres, caballos y esperanza</a></li>
+                        <li><a href="#" data-page="19">Atalaya realista: vigías en la Ermita de Chiquinquirá</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <ul class="tabla-contenido">
+                        <li><a href="#" data-page="21">La entrada de Bolívar a Tunja</a></li>
+                        <li><a href="#" data-page="23">Campamento realista en penuria</a></li>
+                        <li><a href="#" data-page="25">Mil puntadas por la causa: la labor de las mujeres</a>
+                        </li>
+                        <li><a href="#" data-page="27">Cena en honor a los mandos patriotas</a>
+                        </li>
+                        <li><a href="#" data-page="29">La trampa: Julián Garzón y la desinformación</a></li>
+                        <li><a href="#" data-page="31">Regalos para Barreiro: pan, vino y engaño</a></li>
+                        <li><a href="#" data-page="33">La decisión final: rumbo al río Boyacá</a></li>
+                        <!-- <li><a href="#" data-page="">Atalaya realista: vigías en la Ermita de Chiquinquirá</a> -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Contenido (16 páginas) -->
+            <!-- escena 1 -->
+            <div class="page">
+                <div class="page-content" id="page1">
+                    <h3 class="title_escena">Tras el Pantano de Vargas: la marcha hacia Tunja</h3>
+                    <p class="parrafo">En los primeros días de agosto de 1819, luego de la batalla del pantano
+                        de Vargas, el
+                        ejército patriota tomó el camino que de Paipa conduce a Toca y Chivatá, para dirigirse
+                        de forma estratégica a la ciudad de Tunja, evitando la vía principal para no ser
+                        detectados por los espías realistas. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio1">
+                    </button>
+                    <div class="page-number1" id="page-number">1</div>
+
+                    <audio id="audio1" src="audios/audio1.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/1. Ejercito Patriota por los caminos de Toca y Chivata.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">2</div>
+
+                </div>
+            </div>
+            <!-- escena 2 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/2. Ejercito realista camino real Paípa.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">3</div>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">La persecución realista bajo la lluvia</h3>
+                    <p class="parrafo">El 5 de agosto, al enterarse del movimiento de los patriotas, el ejército
+                        realista marchó por el camino real de Paipa a Tunja en medio de la lluvia. Atravesaron
+                        el páramo, cruzaron por Cómbita y al día siguiente instalaron su campamento en el
+                        caserío de Motavita. Desde allí, el general Barreiro fue alertado por espías sobre la
+                        cercanía del enemigo. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio1">
+                    </button>
+                    <div class="page-number2" id="page-number">4</div>
+
+                    <audio id="audio2" src="audios/audio2.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 3 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Mensajeros de la causa: Andrés Gallo y Juana Velasco</h3>
+                    <p class="parrafo">Mientras tanto, al pasar por Toca, el clérigo patriota Andrés Gallo
+                        informó a su familia sobre el avance del ejército. Aquella noche, su madre, doña Juana
+                        Velasco de Gallo, partió con dos sirvientes hacia Tunja, llegando al amanecer del día
+                        siguiente. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;"
+                        onclick="reproducirAudio('audio3')">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio3">
+                    </button>
+                    <div class="page-number1" id="page-number">5</div>
+
+                    <audio id="audio3" src="audios/audio3.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/3. Juana Velasco de camino a Tunja.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">6</div>
+                </div>
+            </div>
+            <!-- escena 4 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/4. los habitantes de Motavita avandonaron sus casas..png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">7</div>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Éxodo campesino en Cómbita y Motavita</h3>
+                    <p class="parrafo">La noticia del avance realista generó alarma entre la población. A pesar
+                        de las lluvias, los habitantes de Cómbita y Motavita huyeron rápidamente. Se llevaron
+                        los animales, cosechas y alimentos, dificultando el abastecimiento del ejército
+                        realista. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio4">
+                    </button>
+                    <div class="page-number2" id="page-number">8</div>
+
+                    <audio id="audio4" src="audios/audio4.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 5 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">El traslado del gobernador Loño y las fuerzas realistas</h3>
+                    <p class="parrafo">Por su parte, Juan Loño el gobernador de Tunja, con el batallón Tercero
+                        de Numancia, caballería, municiones y tres piezas de artillería, abandonó la ciudad y se
+                        dirigió a Motavita, donde se uniría al cuartel realista del general Barreiro. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio5">
+                    </button>
+                    <div class="page-number1" id="page-number">9</div>
+
+                    <audio id="audio5" src="audios/audio5.mp3"></audio>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/5. Juan Loño y el Batallon de artilleria abandonan  Tunja.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">10</div>
+
+                </div>
+            </div>
+            <!-- escena 6 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">El golpe patriota: Tunja en manos rebeldes</h3>
+                    <p class="parrafo">Al ingresar a Tunja, la vanguardia patriota tomó control de 600 fusiles,
+                        cobijas, alpargatas, telas y suministros médicos que habían pertenecido a los realistas.
+                        Fue un golpe clave que fortaleció a las tropas antes del inminente enfrentamiento de la
+                        Batalla de Boyacá. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio6">
+                    </button>
+                    <div class="page-number1" id="page-number">11</div>
+
+                    <audio id="audio6" src="audios/audio6.mp3"></audio>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/6. El ejercito patriota saquea Tunja.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">12</div>
+
+                </div>
+            </div>
+            <!-- escena 7 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/7. Apoyo de la poblacion civil al ejercito patriota.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">13</div>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">El pueblo se une: víveres, caballos y esperanza</h3>
+                    <p class="parrafo">La población civil de Tunja y de pueblos cercanos se volcaron en apoyo al
+                        ejército patriota; entregaron frutas, amasijos y otras comidas de la región, además de
+                        caballos, ganado y herramientas necesarias para la causa libertadora. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio7">
+                    </button>
+                    <div class="page-number2" id="page-number">14</div>
+
+                    <audio id="audio7" src="audios/audio7.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 8 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Atalaya realista: vigías en la Ermita de Chiquinquirá</h3>
+                    <p class="parrafo">Desde las alturas de Motavita, los realistas divisaron un grupo de
+                        infantería patriota asentado en la cima de la Ermita de Chiquinquirá, confirmando que el
+                        enemigo se posicionaba estratégicamente. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio8">
+                    </button>
+                    <div class="page-number1" id="page-number">15</div>
+
+                    <audio id="audio8" src="audios/audio8.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/8. Reconocimiento del ejercito patriota.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">16</div>
+
+                </div>
+            </div>
+            <!-- escena 9 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/9. Llegada del ejercito patriota a Tunja.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">17</div>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">La entrada de Bolívar a Tunja</h3>
+                    <p class="parrafo">El general Bolívar llegó a Tunja con el grueso del ejército. Fueron
+                        recibidos con emoción y entusiasmo, reconociendo su labor y alentándolos a continuar.
+                        Hombres de todas las clases sociales se enlistaron, dando origen al batallón de
+                        Tiradores. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio9">
+                    </button>
+                    <div class="page-number2" id="page-number">18</div>
+
+                    <audio id="audio9" src="audios/audio9.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 10 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Campamento realista en penuria</h3>
+                    <p class="parrafo">La situación realista era precaria, pues además del hostigamiento que
+                        recibían de las guerrillas patriotas en los caminos, las tropas estaban agotadas, sus
+                        ropas y armas mojadas por la lluvia, y los víveres se agotaban. Intentaban secar sus
+                        pertenencias usando el calor de las fogatas en el campamento. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio10">
+                    </button>
+                    <div class="page-number1" id="page-number">19</div>
+
+                    <audio id="audio10" src="audios/audio10.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/10. Ejercito realista en precarias condiciones_.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">20</div>
+
+                </div>
+            </div>
+            <!-- escena 11 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/11. Confeccion de más de 2.000 camisas.png" alt="imagen11"
+                        class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">21</div>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Mil puntadas por la causa: la labor de las mujeres</h3>
+                    <p class="parrafo">Conmovidas por la precariedad del ejército patriota, Juana Velasco de
+                        Gallo y un grupo de mujeres tunjanas organizaron una gran labor de apoyo: confeccionaron
+                        más de 2.000 camisas. Incluso donaron parte de su ropa para vestir a los soldados. Al
+                        respecto el general Anzoátegui escribió a su esposa: "…auxiliado eso sí por el
+                        patriotismo y el entusiasmo de los patriotas de la provincia de Tunja,
+                        especialísimamente por las mujeres que, ¡no lo creerás! Se despojaron realmente de su
+                        ropa para hacer con ella camisas, calzoncillos y chaquetas para nuestros soldados y de
+                        todo lo que tenían para socorrernos. Fue esta una resurrección milagrosa. Nos volvió la
+                        vida, el valor, y la fe...".</p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio11">
+                    </button>
+                    <div class="page-number2" id="page-number">22</div>
+
+                    <audio id="audio11" src="audios/audio11.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 12 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Cena en honor a los mandos patriotas</h3>
+                    <p class="parrafo">En honor a la causa, Juana Velasco de Gallo y sus allegadas ofrecieron
+                        una cena de bienvenida al estado mayor del ejército patriota. Una velada que enaltecía
+                        su labor en la causa independentista. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio12">
+                    </button>
+                    <div class="page-number1" id="page-number">23</div>
+
+                    <audio id="audio12" src="audios/audio12.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/12. Cena de bienvenida al ejercito patriota.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">24</div>
+
+                </div>
+            </div>
+            <!-- escena 13 -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/13. Bolivar envia un espia al campamento relista_.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number1" id="page-number">25</div>
+
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">La trampa: Julián Garzón y la desinformación</h3>
+                    <p class="parrafo">Terminada la cena, Bolívar decidió enviar al espía Julián Garzón “el
+                        Crespo", amigo del coronel español Juan Loño, al campamento de Barreiro haciéndole creer
+                        que el ejército patriota se quedaría en Tunja descansando. </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio13">
+                    </button>
+                    <div class="page-number2" id="page-number">26</div>
+
+                    <audio id="audio13" src="audios/audio13.mp3"></audio>
+                </div>
+            </div>
+            <!-- escena 14 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">Regalos para Barreiro: pan, vino y engaño</h3>
+                    <p class="parrafo">Julián partió con un peón y una carga de regalos: pan, vino, dulces y
+                        aguardiente. Fue recibido con amabilidad en el campamento realista. Barreiro convencido
+                        por la desinformación, declaró:
+                        “…que Bolívar siga en Tunja, que yo mañana marcho hacia Santafé.”
+                        Sin saberlo, acababa de caer en la trampa estratégica que sellaría su derrota.
+                    </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio14">
+                    </button>
+                    <div class="page-number1" id="page-number">27</div>
+
+                    <audio id="audio14" src="audios/audio14.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/14. Julian Garzon llega al campamento realista.png"
+                        alt="imagen_3" class="img_escena zoomable">
+                    <div class="page-number2" id="page-number">28</div>
+
+                </div>
+            </div>
+            <!-- escena 15 -->
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">La decisión final: rumbo al río Boyacá</h3>
+                    <p class="parrafo">De regreso, Garzón le informó a Bolívar sobre las precarias condiciones y
+                        el desánimo en las filas realistas, así como de la intención de Barreiro de avanzar a
+                        Santafé para reunirse con el virrey Sámano para reforzar las tropas y enfrentar al
+                        ejército patriota, ante esta información Bolívar decide salir al encuentro de los
+                        realistas en el paso por el río Boyacá para obligarlos a dar la batalla.
+                    </p>
+                    <button id="btn-audio" style="background: none; border: none; cursor: pointer;">
+                        <img src="img/icon_audio.png" alt="icon-audio" class="audio-button" data-audio="audio15">
+                    </button>
+                    <div class="page-number1" id="page-number">29</div>
+
+                    <audio id="audio15" src="audios/audio15.mp3"></audio>
+                </div>
+            </div>
+            <div class="page">
+                <div class="page-content">
+                    <h3 class="title_escena">DÍAS PREVIOS A LA BATALLA DE BOYACÁ</h3>
+                    <h4 class="subtitle"> El camino hacia la victoria</h4>
+                    <p class="parrafo">
+                        Antes del 7 de agosto de 1819, la historia se escribió paso a paso, bajo cielos grises y
+                        caminos enfangados, en el murmullo de las fogatas y en las decisiones que cambiarían el
+                        destino de la Nueva Granada.
+                        Este libro invita a recorrer quince episodios clave que prepararon el terreno para la
+                        Batalla de Boyacá. Desde maniobras militares hasta gestos cotidianos de solidaridad,
+                        cada página reconstruye la tensión, la estrategia y la esperanza que se vivieron en esos
+                        días cruciales.
+                        Con un enfoque narrativo y visual, esta obra combina rigor histórico y sensibilidad
+                        artística para que el lector se sumerja en el ambiente de 1819. Un homenaje a héroes
+                        conocidos y anónimos, y una oportunidad para recordar que la libertad se forja con la
+                        voluntad y el valor de un pueblo decidido a cambiar su destino.
+
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Contraportada -->
+            <div class="page">
+                <div class="page-content">
+                    <img src="img/PINTURAS LIBRO BOYACA/9. Llegada del ejercito patriota a Tunja.png" alt="imagen_3"
+                        class="img_escena zoomable">
+                </div>
+            </div>
+            <div class="page contraportada">
+                <div class="page-content">
+                    <div class="contraportada">
+                        <img src="img/Museo-Ruta-de-la-Libertad-Blanco.png" alt="logo" class="museo_contra">
+                        <p>NARRATIVA DIAS PREVIOS </p>
+                        <p> ESTACIÓN MUSEOGRÁFICA BATALLA DE BOYACÁ</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación -->
+        <div class="controls">
+            <a id="prev-btn"><img src="img/flecha-izquierda.png" alt="flecha-izquierda" class="btn_opc"></a>
+            <a id="btn_home"><img src="img/btn_home.png" alt="btn_home" class="btn_home"></a>
+            <a id="next-btn"><img src="img/flecha-derecha.png" alt="flecha-izquierda" class="btn_opc"></a>
+        </div>
+    </div>
+
+
+    </div>
+    <audio src="audios/page_flip.mp3" preload="auto" id="audio"></audio>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
